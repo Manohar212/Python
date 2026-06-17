@@ -7,7 +7,7 @@ if weather =="sunny":
     else:
         print("Its night,Time to sleep.")
 elif weather=="rainy":
-    print("You plaay with your boat toy.")
+    print("You play with your boat toy.")
 elif weather=="snowy":
     if time_of_the_day =="night":
         print("You play with your Teddy bear toy.")
