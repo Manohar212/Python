@@ -1,5 +1,5 @@
-name="Alice"
-age=30
+name=input("Enter your name: ")
+age=int(input("Enter your age: "))
 
 #using the % operator  for string formatting(old-style)
 print("My name is %s and Iam %d years old." % (name,age))
