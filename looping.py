@@ -23,10 +23,14 @@ for i in range(1,21):
     if i%2==0:
         continue
     print(i)
-#Print multiplication table
-num = int(input("Enter a number: "))
-for i in range(1,11):
-    print(f"{num} x {i} = {num*i}")
+
+#Print numbers from 1 to 100, show only even/odd
+for i in range(1,101):
+    if i%2 == 0:
+        print(f"{i} is even ! ")
+    elif i%2 != 0:
+        print(f"{i} is odd ! ")
+
 
 #find the sum of 1 to 100 
 total = 0
