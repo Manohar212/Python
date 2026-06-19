@@ -25,3 +25,5 @@ print(student_name[-6])
 print(student_name[-7])
 
 print("-----gap-----")
+
+print(f"First character: {student_name[0]}")
