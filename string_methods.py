@@ -1,38 +1,29 @@
-#python string manipulation examples 
+# Basic Methods
+s = "Hello, World!"
+print(s.upper())           
+print(s.lower())            
+print(s.replace('o', 'x'))  
+print(s.count('l'))         
 
-#define originaal string
-
-s="Hello, world!"
-
-#converting the string to uppercase]
-print(s.upper())
-
-#converting the string to lowercase
-print(s.lower())
-
-#remove leading and trailing white spaces from the string
-print(s.strip())
-
-#replaces all accurances of 'o' with 'x' in the string
-print(s.replace ('o','x'))
-
-#count the number of occurences of 'a' in the string
-print("Abracadabra".count('a'))
-
-print(f"First character: {s[0]}")
-print(f"Last character: {s[-1]}")
-
-name = input("Enter your name: ")
+# Vowel Counter (from file)
+name = input("Enter name: ")
 vowels = "aeiouAEIOU"
-vowel_count = 0
-consonant_count = 0
+v_count = 0
+c_count = 0
 
 for char in name:
     if char.isalpha():
         if char in vowels:
-            vowel_count +=1
+            v_count += 1
         else:
-            consonant_count +=1
+            c_count += 1
 
-print(f"Number of vowels in your name: {vowel_count}")
-print(f"Number of consonants in your name: {consonant_count}")
+print(f"Vowels: {v_count}, Consonants: {c_count}")
+
+# String Analyzer
+text = input("Enter text: ")
+print(f"Length: {len(text)}")
+print(f"Uppercase: {text.upper()}")
+print(f"Lowercase: {text.lower()}")
+print(f"Words: {len(text.split())}")
+print(f"Spaces: {text.count(' ')}")

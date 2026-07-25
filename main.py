@@ -1,17 +1,48 @@
-weather =input("enter type of weather (sunny/rainy/snowy):")
-time_of_the_day = "night"
+# Original Weather Program
+weather = input("Weather (sunny/rainy/snowy): ")
+time_of_day = "night"
 
-if weather =="sunny":
-    if time_of_the_day =="day":
-        print("You play with your car toy.")
+if weather == "sunny":
+    if time_of_day == "day":
+        print("Play with car")
     else:
-        print("Its night,Time to sleep.")
-elif weather=="rainy":
-    print("You play with your boat toy.")
-elif weather=="snowy":
-    if time_of_the_day =="night":
-        print("You play with your Teddy bear toy.")
+        print("Sleep")
+elif weather == "rainy":
+    print("Play with boat")
+elif weather == "snowy":
+    if time_of_day == "night":
+        print("Play with teddy")
     else:
-        print("You play with your snowman toy.")
+        print("Play with snowman")
 else:
-    print("You stay inside and read a storybook.")
+    print("Read storybook")
+
+# Your Program: Student Grade
+score = int(input("Enter score (0-100): "))
+
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+print(f"Score: {score}, Grade: {grade}")
+
+# Your Program: Age Category
+age = int(input("Enter age: "))
+
+if age < 13:
+    category = "Child"
+elif age < 18:
+    category = "Teen"
+elif age < 65:
+    category = "Adult"
+else:
+    category = "Senior"
+
+print(f"Category: {category}")
